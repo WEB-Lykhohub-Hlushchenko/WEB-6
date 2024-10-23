@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM для салонів краси</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="assets/logo.png" alt="Logo">
+    </div>
+    <div class="navigation">
+    <nav>
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="table.html">Таблиця</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+    <button class="header-login-button" onclick="location.href='login.html'">
+        Увійти
+    </button>
+    </div>
+</header>
+
+<div class="content">
+<div class="container mt-5">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/slide1.jpg" class="d-block w-100" alt="Слайд 1">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/slide2.jpg" class="d-block w-100" alt="Слайд 2">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/slide3.jpg" class="d-block w-100" alt="Слайд 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+
+    <section id="news" class="mt-5">
+        <h2>Новини</h2>
+        <div class="news-item">
+            <h3>Відкриття нового салону краси в Києві</h3>
+            <p>Ми раді повідомити про відкриття нового салону краси у столиці! Наші клієнти можуть насолоджуватися першокласними послугами з догляду за волоссям, манікюром та косметичними процедурами на новій локації. Запрошуємо відвідати нас за адресою вул. Хрещатик, 22.</p>
+            <p><em>Опубліковано: 01 жовтня 2024 року</em></p>
+        </div>
+        <div class="news-item">
+            <h3>Розширення мережі салонів у Львові</h3>
+            <p>Ми продовжуємо розширювати нашу присутність у західній частині України та відкриваємо новий салон у Львові! Тепер ще більше жінок і чоловіків можуть скористатися нашими послугами з догляду за зовнішністю у центрі міста. Завітайте до нас на площу Ринок, 15.</p>
+            <p><em>Опубліковано: 15 вересня 2024 року</em></p>
+        </div>
+        <div class="news-item">
+            <h3>Новий салон краси в Одесі біля моря</h3>
+            <p>Наш новий салон в Одесі розташований поблизу набережної Аркадії, ідеальне місце для відпочинку та краси! Запрошуємо вас насолодитися нашими процедурами для обличчя та тіла в новому затишному просторі. Чекаємо вас за адресою вул. Генуезька, 5.</p>
+            <p><em>Опубліковано: 28 серпня 2024 року</em></p>
+        </div>
+        <div class="news-item">
+            <h3>Оновлення послуг у Харкові</h3>
+            <p>Наш салон у Харкові тепер пропонує нові косметичні процедури та сучасні технології догляду за шкірою! Відвідайте нас, щоб випробувати останні тренди в догляді за обличчям та тілом. Адреса: просп. Науки, 44.</p>
+            <p><em>Опубліковано: 10 серпня 2024 року</em></p>
+        </div>
+        <div class="news-item">
+            <h3>Відкриття нового салону в Дніпрі</h3>
+            <p>Мережа наших салонів продовжує зростати! Тепер ми присутні у Дніпрі, де ви можете отримати якісні послуги з манікюру, педикюру та косметології. Відвідайте нас на проспекті Дмитра Яворницького, 60.</p>
+            <p><em>Опубліковано: 25 липня 2024 року</em></p>
+        </div>
+    </section>
+
+
+    <section class="mt-5">
+        <h2>Про CRM</h2>
+        <p>Наша CRM-система для салонів краси допомагає власникам бізнесу ефективно управляти записами, клієнтами та працівниками. Вона пропонує зручний інтерфейс, автоматизацію завдань і детальну аналітику.</p>
+    </section>
+
+    <section id="testimonials" class="mt-5">
+        <h2 class="text-center">Відгуки наших клієнтів</h2>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="testimonial-content">
+                        <p>"Салон просто чудовий! Відвідую їх уже декілька місяців і завжди залишаюсь задоволеною. Персонал дуже ввічливий та професійний!"</p>
+                        <h5>- Олена К.</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial-content">
+                        <p>"Найкращий досвід обслуговування, який я коли-небудь мав. Дівчата в салоні знають свою справу!"</p>
+                        <h5>- Андрій С.</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial-content">
+                        <p>"Я завжди відчуваю себе чудово після візиту до цього салону. Рекомендую всім своїм друзям!"</p>
+                        <h5>- Наталія Г.</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial-content">
+                        <p>"Чудова атмосфера і висококласні послуги! Я завжди залишаюсь задоволеною." </p>
+                        <h5>- Сергій М.</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial-content">
+                        <p>"Я відвідала багато салонів, але цей - найкращий! Персонал дуже уважний і професійний."</p>
+                        <h5>- Марія П.</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial-content">
+                        <p>"Салон краси, який дійсно дбає про своїх клієнтів. Я завжди виходжу з усмішкою!"</p>
+                        <h5>- Іван К.</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial-content">
+                        <p>"Мені подобається, як працюють в цьому салоні. Всі працівники дуже доброзичливі!"</p>
+                        <h5>- Катерина Т.</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial-content">
+                        <p>"Я не можу повірити, як змінилося моє волосся після відвідування цього салону!"</p>
+                        <h5>- Олександр Я.</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial-content">
+                        <p>"Відмінний сервіс і дуже дружелюбний персонал! Обов'язково повернуся знову."</p>
+                        <h5>- Дарина В.</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial-content">
+                        <p>"Цей салон став моїм улюбленим місцем для відпочинку. Завжди задоволена результатом!"</p>
+                        <h5>- Павло Л.</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </section>
+
+</div>
+</div>
+<footer class="text-center text-white mt-5 p-4">
+    <div class="lds-ellipsis">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <div class="container">
+        <div class="icon-container">
+            <a href="tel:+380932872580" class="text-white"><i class="fas fa-phone icon"></i></a>
+        </div>
+        <div class="icon-container">
+            <a href="mailto:lmaks3910@gmail.com" class="text-white"><i class="fas fa-envelope icon"></i></a>
+        </div>
+        <div class="icon-container">
+            <a href="https://t.me/ticket_to_eternity" class="text-white"><i class="fab fa-telegram icon"></i></a>
+        </div>
+        <div class="icon-container">
+            <a href="https://www.instagram.com/glunana" class="text-white"><i class="fab fa-instagram icon"></i></a>
+        </div>
+        <div class="icon-container">
+            <a href="viber://chat?number=+380932872580" class="text-white"><i class="fab fa-viber icon"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/loading.io/css/spinner/double-ring/index.css">
+
+</body>
+</html>

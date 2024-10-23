@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.auth-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+h4 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 18px;
+}
+
+input[type="email"], input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+button {
+    width: 95%;
+    padding: 10px;
+    background-color: #ff6b6b;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #ff4c4c;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+

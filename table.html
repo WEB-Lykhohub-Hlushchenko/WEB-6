@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Адмін Панель Салону</title>
+  <link rel="stylesheet" href="table.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="global.css">
+</head>
+<body>
+<header>
+  <div class="logo">
+    <img src="assets/logo.png" alt="Logo">
+  </div>
+  <div class="navigation">
+    <nav>
+      <ul>
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="table.html">Таблиця</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </nav>
+    <button class="header-login-button" onclick="location.href='login.html'">
+      Увійти
+    </button>
+  </div>
+</header>
+
+<div class="container">
+  <h1>Список процедур</h1>
+  <div class="table-container">
+    <table>
+      <thead>
+      <tr>
+        <th>№</th>
+        <th>Назва</th>
+        <th>Ціна (ГРН)</th>
+        <th>Фото</th>
+        <th>Дії</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>1</td>
+        <td>Манікюр</td>
+        <td>300.00</td>
+        <td><img src="assets/manicure.jpg" alt="Манікюр"></td>
+        <td>
+          <button class="view-btn">Перегляд</button>
+          <button class="edit-btn">Редагування</button>
+          <button class="delete-btn">Видалити</button>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Педикюр</td>
+        <td>400.00</td>
+        <td><img src="assets/pedicure.jpg" alt="Педикюр"></td>
+        <td>
+          <button class="view-btn">Перегляд</button>
+          <button class="edit-btn">Редагування</button>
+          <button class="delete-btn">Видалити</button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</body>
+</html>

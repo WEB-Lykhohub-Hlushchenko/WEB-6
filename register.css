@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.content-register {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.register-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+input[type="email"], input[type="password"], input[type="text"], input[type="date"], input[type="tel"]{
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+select {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+button {
+    width: 90%;
+    padding: 10px;
+    background-color: #ff6b6b;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #ff4c4c;
+}
+input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 90%;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.table-register {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+

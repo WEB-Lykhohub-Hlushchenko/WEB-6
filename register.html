@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Реєстрація у салоні краси</title>
+  <link rel="stylesheet" href="register.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+</head>
+<body>
+
+<div class="content-register">
+<div class="register-container">
+  <h2>Реєстрація</h2>
+  <form id="registerForm" action="/register" method="post" enctype="multipart/form-data">
+    <input type="email" id="email" placeholder="Email" required>
+    <small id="emailError" class="error-message"></small>
+
+    <input type="password" id="password" placeholder="Пароль" required>
+    <small id="passwordError" class="error-message"></small>
+
+    <input type="text" id="lastName" placeholder="Прізвище" required>
+    <input type="text" id="firstName" placeholder="Ім'я" required>
+    <input type="text" id="middleName" placeholder="По батькові" required>
+
+    <input type="date" id="dob" placeholder="Дата народження" required>
+
+    <label>Стать:</label>
+    <input type="radio" name="gender" value="Чоловік" required> Чоловік
+    <input type="radio" name="gender" value="Жінка" required> Жінка
+    <small id="genderError" class="error-message"></small>
+
+    <input type="tel" id="phone" placeholder="Номер телефону" required>
+    <small id="phoneError" class="error-message"></small>
+
+    <select id="group" required>
+      <option value="">Оберіть групу</option>
+      <option value="працівник">Працівник</option>
+      <option value="клієнт">Клієнт</option>
+    </select>
+
+    <input type="file" id="profilePic" accept=".jpg, .png">
+
+    <button type="submit">Реєстрація</button>
+  </form>
+
+  <h4>Вже зареєстровані?</h4>
+  <button onclick="location.href='login.html'">Увійти</button>
+
+</div>
+
+<div class="table-register">
+<table id="usersTable" border="1">
+  <thead>
+  <tr>
+    <th>Обрати</th>
+    <th>Email</th>
+    <th>Прізвище</th>
+    <th>Ім'я</th>
+    <th>По батькові</th>
+    <th>Стать</th>
+    <th>Номер телефону</th>
+    <th>Група</th>
+  </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<button id="deleteRows">Видалити обрані рядки</button>
+<button id="duplicateRows">Дублювати обрані рядки</button>
+</div>
+</div>
+<script src="register.js"></script>
+</body>
+</html>

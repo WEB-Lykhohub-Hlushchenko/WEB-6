@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вхід до салону краси</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+<div class="auth-container">
+  <h2>Вхід</h2>
+  <form action="/login" method="post">
+    <input type="email" placeholder="Email" required>
+    <input type="password" placeholder="Пароль" required>
+    <button type="submit">Вхід</button>
+  </form>
+  <h4>Ще не зареєстровані?</h4>
+  <button onclick="location.href='register.html'">
+    Зареєструватись
+  </button>
+</div>
+</body>
+</html>
